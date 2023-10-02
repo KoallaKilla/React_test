@@ -1,0 +1,8 @@
+.project-page {
+    padding: 10px;
+}
+
+.columns {
+    display: flex;
+    flex-flow: row nowrap;
+}
