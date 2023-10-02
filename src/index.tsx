@@ -27,7 +27,8 @@ const router = createBrowserRouter([
 ]);
 
 root.render(
-  // <React.StrictMode>
+
+  // <React.StrictMode> to work with DND
     <Provider store={createRootStore()}>
       <RouterProvider router={router} />
     </Provider>
