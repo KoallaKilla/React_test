@@ -18,7 +18,7 @@ const root = ReactDOM.createRoot(
 const router = createBrowserRouter([
   {
     // FIX
-    path: "/react_test", 
+    path: "/react_test/", 
     element: <ProjectListPage />,
   },
   {
