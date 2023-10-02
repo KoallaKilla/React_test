@@ -1,5 +1,6 @@
 import { useSelector } from 'react-redux'
 import { selectAllProjects } from '../../store/Project/selectors'
+import { Link } from "react-router-dom"
 
 export const ProjectListPage = () => {
   const projects = useSelector(selectAllProjects)
@@ -8,7 +9,7 @@ export const ProjectListPage = () => {
     <h1>Projects</h1>
     <ul>
       {projects.map((project) => <li>
-        <a key={project.projectId} href={`/react_test/project/${project.projectId}`}>{project.title}</a>
+        <Link to={`/react_test/project/${project.projectId}`}>{project.title}</Link>
       </li>)}
     </ul>
   </div>
