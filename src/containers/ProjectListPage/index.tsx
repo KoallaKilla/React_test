@@ -8,7 +8,7 @@ export const ProjectListPage = () => {
     <h1>Projects</h1>
     <ul>
       {projects.map((project) => <li>
-        <a key={project.projectId} href={`/project/${project.projectId}`}>{project.title}</a>
+        <a key={project.projectId} href={`/react_test/project/${project.projectId}`}>{project.title}</a>
       </li>)}
     </ul>
   </div>
